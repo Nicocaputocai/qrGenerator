@@ -11,10 +11,10 @@ let qrcode = new QRCode(document.querySelector('#qrcode'), {
     correctLevel : QRCode.CorrectLevel.H
 });
 
-// input.addEventListener('keyup', () =>{
-//     let inputValue = input.value
-//     qrcode.makeCode(inputValue)
-// })
+input.addEventListener('keyup', () =>{
+    let inputValue = input.value
+    qrcode.makeCode(inputValue)
+})
 button.addEventListener('click', () =>{
     let inputValue = input.value
     qrcode.makeCode(inputValue)
